@@ -1,0 +1,205 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Merienda:wght@400;700&display=swap');
+
+/* 
+font-family: 'Acme', sans-serif;
+font-family: 'Merienda', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Acme', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Merienda', cursive;
+    font-size: 18px;
+}
+
+.common-btn {
+    padding: 10px 30px;
+    background: linear-gradient(to left, #5348ca, #291dc9);
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Acme', sans-serif;
+    border: 3px solid transparent;
+    transition: all linear 0.5s;
+}
+
+.common-btn:hover {
+    border: 3px solid #291dc9;
+    color: #291dc9;
+    background: #fff;
+}
+
+
+/* common css end */
+
+
+/* banner part start */
+
+#banner {
+    background: url(../images/banner-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+#banner .banner-left-content h1 {
+    font-size: 60px;
+}
+
+#banner .banner-left-content h1 span {
+    color: #291dc9
+}
+
+#banner .banner-left-content h4 {
+    font-size: 28px;
+}
+
+#banner .banner-left-content p {
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* banner part end */
+
+
+/* dream part start */
+
+#dream {
+    background: url(../images/dream-bg.png) no-repeat right;
+}
+
+#dream .dream-left-content img {
+    width: 95%;
+}
+
+#dream .dream-right-content h2 {
+    font-size: 50px;
+    color: #291dc9;
+}
+
+
+/* dream part end */
+
+
+/* experiences part start */
+
+#experiences {
+    background: url(../images/exp-bg.png) no-repeat left;
+    /* background-size: cover; */
+}
+
+#experiences h2 {
+    font-size: 50px;
+    color: #291dc9;
+    padding-left: 0.5%;
+}
+
+#experiences .experiences-left-content,
+#experiences .experiences-right-content {
+    width: 90%;
+    font-size: 50px;
+    color: #291dc9;
+    padding-left: 0.5%;
+    box-shadow: 5px 7px 40px grey;
+    height: 450px;
+    margin-bottom: 100px;
+}
+
+#experiences .experiences-left-content {
+    border-left: 7px solid;
+    border-image: linear-gradient(to bottom, tomato, lightsalmon);
+    border-image-slice: 1;
+}
+
+#experiences .experiences-right-content {
+    border-left: 7px solid;
+    border-image: linear-gradient(to bottom, #411091, #887bac);
+    border-image-slice: 1;
+}
+
+#experiences h4 {
+    font-size: 30px;
+    color: #0c999e;
+}
+
+#experiences p {
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* experiences part end */
+
+
+/* footer part start */
+
+footer p {
+    color: #444;
+}
+
+
+/* footer part end */
+
+
+/* media quries start */
+
+@media only screen and (min-width:320px) and (max-width:757px) {
+    .common-btn {
+        padding: 7px 21px;
+        background: linear-gradient(to left, #5348ca, #291dc9);
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        font-family: 'Acme', sans-serif;
+        border: 3px solid transparent;
+        transition: all linear 0.5s;
+    }
+    #banner .banner-left-content h1 {
+        font-size: 34px;
+    }
+    #banner .banner-left-content h4 {
+        font-size: 22px;
+    }
+    #banner .banner-left-content p {
+        font-size: 14px;
+        color: #4321db;
+    }
+    #experiences h2 {
+        font-size: 33px;
+    }
+    #experiences h4 {
+        font-size: 26px;
+    }
+    #experiences p {
+        font-size: 14px;
+        color: #4321db;
+    }
+    #experiences .experiences-left-content,
+    #experiences .experiences-right-content {
+        overflow-y: scroll;
+    }
+    footer p {
+        font-size: 12px;
+        font-weight: 700;
+        color: #4321db;
+    }
+}

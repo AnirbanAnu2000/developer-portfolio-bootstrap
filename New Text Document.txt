@@ -1,0 +1,1 @@
+mobile responsive only(320px to 575px)
